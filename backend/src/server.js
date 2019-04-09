@@ -33,6 +33,6 @@ app.user('/files', express.static(path.resolve(_dirname, '..','tmp'));
 app.use(require('./routes.js'));
 
 
-server.listen(3333);
+server.listen(process.env.PORT || 3333);
 
 
